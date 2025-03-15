@@ -2,6 +2,10 @@ import { fileURLToPath } from "node:url";
 import { defineNitroConfig } from "nitro/config";
 import { dirname, resolve } from "node:path";
 
+defineRenderHandler((event) => {
+  event.respondWith(new Response("Hello, world!"));
+});
+
 export default defineNitroConfig({
   compressPublicAssets: true,
   compatibilityDate: "2025-03-01",

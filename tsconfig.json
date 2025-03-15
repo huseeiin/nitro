@@ -29,6 +29,7 @@
       "nitro/config": ["./lib/config.mjs"],
       "nitro/meta": ["./lib/meta.mjs"],
       "nitro/runtime/meta": ["./lib/runtime-meta.mjs"],
+      "nitro/vite": ["./src/vite.ts"],
       "#nitro-internal-virtual/*": ["./src/types/virtual/*"],
       "#internal/nitro": ["./src/runtime"],
       "#internal/nitro/*": ["./src/runtime/*"]

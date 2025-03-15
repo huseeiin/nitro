@@ -14,7 +14,8 @@
     "./presets": "./dist/presets/index.mjs",
     "./runtime": "./dist/runtime/index.mjs",
     "./runtime/internal": "./dist/runtime/internal/index.mjs",
-    "./runtime/meta": "./lib/runtime-meta.mjs"
+    "./runtime/meta": "./lib/runtime-meta.mjs",
+    "./vite": "./dist/vite.mjs"
   },
   "bin": {
     "nitro": "./dist/cli/index.mjs",
@@ -152,22 +153,28 @@
     "miniflare": "^3.20250224.0",
     "prettier": "^3.5.3",
     "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "rolldown": "1.0.0-beta.4",
     "typescript": "^5.8.2",
     "unbuild": "^3.5.0",
     "undici": "^7.4.0",
+    "vite": "^6.2.1",
     "vitest": "^3.0.8",
     "xml2js": "^0.6.2"
   },
   "peerDependencies": {
     "rolldown": "*",
-    "xml2js": "^0.6.2"
+    "xml2js": "^0.6.2",
+    "vite": "^6"
   },
   "peerDependenciesMeta": {
-    "xml2js": {
+    "vite": {
       "optional": true
     },
     "rolldown": {
+      "optional": true
+    },
+    "xml2js": {
       "optional": true
     }
   },
